@@ -7,6 +7,15 @@ class buah {
     public $musim;
     public $berat;
 
+    // constructor
+    public function __construct($nama, $warna, $rasa, $musim, $berat) {
+        $this->nama = $nama;
+        $this->warna = $warna;
+        $this->rasa = $rasa;
+        $this->musim = $musim;
+        $this->berat = $berat;
+    }
+
     // method 1: Profil buah
     public function ProfilBuah() {
         echo "<h3>Profil Buah</h3> <br>";
@@ -35,40 +44,11 @@ class buah {
 }
 
     // Membuat 5 objek buah
-    $apel = new buah();
-    $apel->nama = "Apel";
-    $apel->warna = "Merah";
-    $apel->rasa = "Manis";
-    $apel->musim = "Gugur";
-    $apel->berat = 150;
-
-    $mangga = new buah();
-    $mangga->nama = "Mangga";
-    $mangga->warna = "Hijau";
-    $mangga->rasa = "Asam Manis";
-    $mangga->musim = "Kemarau";
-    $mangga->berat = 350;
-
-    $pisang = new buah();
-    $pisang->nama = "Pisang";
-    $pisang->warna = "Kuning";
-    $pisang->rasa = "Manis";
-    $pisang->musim = "Sepanjang Tahun";
-    $pisang->berat = 120;
-
-    $semangka = new buah();
-    $semangka->nama = "Semangka";
-    $semangka->warna = "Hijau Merah";
-    $semangka->rasa = "Manis";
-    $semangka->musim = "Panas";
-    $semangka->berat = 2000;
-
-    $jeruk = new buah();
-    $jeruk->nama = "Jeruk";
-    $jeruk->warna = "Oranye";
-    $jeruk->rasa = "Asam";
-    $jeruk->musim = "Hujan";
-    $jeruk->berat = 80;
+    $apel = new buah("Apel", "Merah", "Manis", "Gugur", 150);
+    $mangga = new buah("Mangga", "Hijau", "Asam Manis", "Kemarau", 350);
+    $pisang = new buah("Pisang", "Kuning", "Manis", "Sepanjang Tahun", 120);
+    $semangka = new buah("Semangka", "Hijau Merah", "Manis", "Panas", 2000);
+    $jeruk = new buah("Jeruk", "Oranye", "Asam", "Hujan", 80);
 
     // Menampilkan semua objek dan methods nya
     $apel->ProfilBuah();
