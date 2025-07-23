@@ -1,4 +1,3 @@
-
 <?php
 class buah {
     // properties / ciri-ciri / karakteristik
